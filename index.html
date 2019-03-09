@@ -1,53 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CMS.js</title>
-    <meta name="description" content="The JavaScript Site Generator">
-    <meta name="author" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-    <link rel="stylesheet" href="./css/animations.css">
-    <link rel="stylesheet" href="./css/poole.min.css">
-    <link rel="stylesheet" href="./css/poole.overrides.min.css">
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Dean Roskell - Game & Software Developer</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- Open Graph -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@roskelld" />
+	<meta class="meta-title" name="twitter:title" content="Dean Roskell: Game/Software Developer and Consultant" />
+	<meta name="twitter:description" content="Game/Software Developer since 1997. Dean has worked on 16 published games across all major platforms. He has recently been developing web-based applications centered around Bitcoin & Lightning Network technologies. He is based in Edmonton, Canada." />
+	<meta name="twitter:image" content="https://deanroskell.com/img/logo/logo-square.png" />
+	<meta class="meta-title" property="og:title" content="Dean Roskell: Game/Software Developer and Consultant" />
+	<meta property="og:type" content="website" />
+	<meta class="meta-title" property="og:site_name" content="Dean Roskell: Game/Software Developer and Consultant" />
+	<meta property="og:url" content="https://deanroskell.com" />
+	<meta property="og:image" content="https://deanroskell.com/img/logo/logo-square.png" />
+	<meta property="og:image:width" content="200" />
+	<meta property="og:image:height" content="200" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:alt" content="Dean Roskell" />
+	<meta property="og:description" content="Game/Software Developer since 1997. Dean has worked on 16 published games across all major platforms. He has recently been developing web-based applications centered around Bitcoin & Lightning Network technologies. He is based in Edmonton, Canada." />
+
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Google Analytics -->
+	<script>
+		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+		ga('create', 'UA-135750402-1', 'auto');
+
+		// Replace the following lines with the plugins you want to use.
+		ga('require', 'eventTracker');
+		ga('require', 'outboundLinkTracker');
+		ga('require', 'urlChangeTracker');
+	</script>
+	<!-- End Google Analytics -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-MC7X7QQ"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'GTM-MC7X7QQ', {
+		  'page_path': ''
+	  });
+	</script>
+
+	<!-- End Google Tag Manager -->
+
+	<script async src="https://www.google-analytics.com/analytics.js"></script>
+	<script async src="./js/lib/autotrack.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./js/lib/materialize.min.css">
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <noscript>Please enable JavaScript to view this site.</noscript>
-  </head>
+</head>
+
   <body>
-    <!-- Main Container -->
-    <div class="container content">
-      <!-- Header -->
-      <header class="masthead">
-        <h3 class="masthead-title">
-        <a href="#" class="sitename" title="Home">
-          CMS.js
-        </a>
-        <small class="tagline">
-          The Javascript Site Generator -TEST
-        </small>
-        </h3>
-        <!-- Navigation -->
-        <nav class="nav">
-          <ul>
-            <li><a href="#/posts">Posts</a></li>
-            <li><a href="//github.com/chrisdiana/cms.js" target="_blank">Github</a></li>
-            <li><a href="#/pages/about">About</a></li>
-            <li><a href="#/pages/links">Links</a></li>
-          </ul>
-        </nav>
-      </header>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MC7X7QQ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="border-red"></div>
+    <div class="border-cyan"></div>
+    <div class="border"></div>
+    <div class="border-white"></div>
+    <a href="#home"><img id="logo" class="logo" src="./img/logo/logo-square-trans-50.png" alt=""></a>
 
-      <!-- CMS -->
-      <div id="cms"></div>
+    <!-- HEADER -->
+    <header>
+        <!-- MAIN NAV -->
+		<div class="navbar-fixed hide-on-med-and-down">
+			<nav id="nav-header" class="off-white z-depth-0">
+				<div class="nav-content">
+					<div class="row">
+						<div class="col m12">
+							<div class="center">
+								<a id="home-menu-btn" 			href="#/pages/home" class="menu-btn btn-large btn-flat off-white no-select hvr-bounce-to-bottom soft-grey-text-2 active">Home</a>
+                                <a id="posts-menu-btn" 			href="#/posts" class="menu-btn btn-large btn-flat off-white no-select hvr-bounce-to-bottom soft-grey-text-2">Blog</a>
+								<a id="services-menu-btn" 		href="#/pages/services" class="menu-btn btn-large btn-flat off-white no-select hvr-bounce-to-bottom soft-grey-text-2">services</a>
+								<a id="games-menu-btn" 			href="#/pages/games" class="menu-btn btn-large off-white btn-flat no-select hvr-bounce-to-bottom soft-grey-text-2">games</a>
+								<a id="applications-menu-btn"   href="#/pages/applications" class="menu-btn btn-large btn-flat no-select off-white hvr-bounce-to-bottom soft-grey-text-2">apps</a>
+								<a id="projects-menu-btn" 		href="#/pages/projects" class="menu-btn btn-large btn-flat off-white no-select hvr-bounce-to-bottom soft-grey-text-2">projects</a>
+								<a id="about-menu-btn" 			href="#/pages/about" class="menu-btn btn-large btn-flat off-white no-select hvr-bounce-to-bottom soft-grey-text-2">About</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
 
-      <!-- Footer -->
-      <footer class="footer">
-        <small class="footer-text">
-        </small>
-      </footer>
-    </div>
+        <!-- SIDE NAV -->
+		<div class="off-white">
+			<ul class="sidenav no-padding no-margin" id="mobile-menu">
+				<div class="row center">
+					<a href="#home"><img width="80px" src="./img/logo/logo-square-trans-50.png" onclick="s.sideNavInstances[0].close();"></a>
+				</div>
+				<li><a data-target="home" class="pointer menu-btn no-select hvr-bounce-to-right soft-grey-text-2" onclick="s.sideNavInstances[0].close();">home</a></li>
+				<li><a data-target="services" class="pointer menu-btn no-select hvr-bounce-to-right soft-grey-text-2" onclick="s.sideNavInstances[0].close();">services</a></li>
+				<li class="no-padding">
+					<ul class="collapsible collapsible-accordion">
+						<li>
+							<a data-target="" class="collapsible-header menu-btn no-select hvr-bounce-to-right soft-grey-text-2" tabindex="0">GAMES</a>
+							<div class="collapsible-body"><ul id="mobile-games-links"></ul></div>
+						</li>
+
+						<li>
+							<a data-target="" class="collapsible-header menu-btn no-select hvr-bounce-to-right soft-grey-text-2" tabindex="0">APPLICATIONS</a>
+							<div class="collapsible-body"><ul id="mobile-applications-links"></ul></div>
+						</li>
+
+						<li>
+							<a data-target="" class="collapsible-header menu-btn no-select hvr-bounce-to-right soft-grey-text-2" tabindex="0">PROJECTS</a>
+							<div class="collapsible-body"><ul id="mobile-projects-links"></ul></div>
+						</li>
+					</ul>
+				</li>
+				<li><a data-target="about" class="pointer menu-btn no-select hvr-bounce-to-right soft-grey-text-2" onclick="s.sideNavInstances[0].close();">About</a></li>
+			</ul>
+		</div>
+		<div class="hide-on-large-only">
+			<a id="sidenav-btn" class="btn-flat z-depth-0 pointer waves-effect"><i class="fas fa-bars blue-text fa-2x"></i></a>
+		</div>
+	</header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- CMS -->
+        <div id="cms"></div>
+    </main>
+
+    <footer class="page-footer off-white no-select">
+		<div class="row">
+			<div class="col s12">
+				<div class="center-align">
+					<a href="https://twitter.com/roskelld" class="btn-flat" title="Twitter"><i class="soft-grey-text fab fa-twitter fa-2x"></i></a>
+					<a href="https://github.com/roskelld/" class="btn-flat" title="Github"><i class="soft-grey-text fab fa-github fa-2x"></i></a>
+					<a href="https://stackoverflow.com/users/6126468/roskelld" class="btn-flat" title="Stack Exchange"><i class="soft-grey-text fab fa-stack-overflow fa-2x"></i></a>
+					<a href="mailto:roskelld@protonmail.com?subject=Hey Dean!" class="btn-flat email" title="email"><i class="soft-grey-text fas fa-envelope fa-2x"></i></a>
+				</div>
+				<div class="center-align">
+					<span id="shhh" class="hover-gray-to-color">🍒</span> <span class="grey-text">© 2019 Dean Roskell</span>
+				</div>
+			</div>
+		</div>
+	</footer>
 
     <!-- ES5 Polyfills -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.12/es5-shim.min.js"></script>

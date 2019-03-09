@@ -6,7 +6,7 @@ var config = {
 
   // Mode 'GITHUB' for Github Pages, 'SERVER' for Self Hosted
   // Defaults to Server mode if not specified
-  mode: 'GITHUB',
+  mode: 'SERVER',
 
   // If Github mode is set, your Github username, repo name,
   // and branch to get files from.
@@ -35,13 +35,17 @@ var config = {
   // and single layout template that will determine how the file will be rendered.
   types: [
     {
-    // for example, layouts/post-list.html
-    name: 'posts',
-      layout: { list: 'post-list', single: 'post' },
+        // for example, layouts/post-list.html
+        name: 'posts',
+        layout: { list: 'post-list', single: 'post' },
     },
     {
-      name: 'pages',
-      layout: { list: 'page-list', single: 'page' },
+        name: 'pages',
+        layout: { list: 'page-list', single: 'page' },
+    },
+    {
+        name: 'home',
+        layout: { list: 'home', single: 'home' },
     },
   ],
 };
